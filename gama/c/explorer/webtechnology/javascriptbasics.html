@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script Basics</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		body{
+			font-family: monospace;
+		}
+		h1{
+			text-align: center;
+		}
+		div{
+			padding: 1em;
+			border: 2px solid #4350FD;
+			box-shadow: 0px 0px 2px green;
+		}
+		button{
+			margin-left: 1em;		
+			padding: 4px;
+			color: #FA247D;
+		}
+	</style>
+</head>
+<body>
+	<h1>Java Script Basics</h1>
+	<div>
+		<button type="button" onclick="palert()"> Alert </button>	
+		<button type="button" onclick="pprompt()"> Prompt </button>
+		<button type="button" onclick="pconfirm()"> Confirm </button>
+		<button type="button" onclick="demo1()"> Demo1 </button>
+	</div>
+	<p id="asdf">afgda</p>
+
+	
+	<script>
+
+		function palert(){
+			alert("Starting with Java Script");
+		}
+
+		function pprompt(){
+			var user=prompt('Please Enter Your Name');
+			alert(user);
+		}
+
+		function pconfirm(){
+			var result=confirm('Do You Really want to leave the page');
+			if(result==true)
+				{alert('Thanks for visiting');}
+			else
+				{alert('Thanks for staying with us');}
+		}
+
+		function demo1(){
+			alert("Please Refresh Page To Return")
+			document.write('JS can be declared in head or body');
+		}
+
+		var person={
+			name:"Rahul",age:23,favcolor:"lightblue",height:175
+		};
+		var x=person.name;
+		var y=person.age;
+		var a=document.write(person.age);
+		var b=document.write(y);
+		var c=document.write(x);
+
+		/******    Making Object By object Constructor Function   **********?
+		/*function person(name,age,color){
+			this.name = name;
+			this.age = age;
+			this.favcolor = color;
+		}
+		var p1 = new person("sachin",18,"blue");
+		var p2 = new person("Kumar",20,"green");
+		document.write(p1.age);
+		document.write(p2.name);   */
+
+		/***********    Array    *****************/
+		var array1=new Array("Html","CSS","JS");
+		array1[3]="PHP";
+		document.write(array1[1],"\n");
+		document.write(array1[0],"\n");
+		document.write(array1[3],"\n");
+
+		/********  Array Properties    **********/
+		document.write(array1.length,"\n");
+
+		var array2=["C++","JAVA","KOTLIN"];
+		document.write(array2[2],"\n");
+
+		var array3=array1.concat(array2);
+		for(var i=0;i<array3.length;i++){
+			document.write(array3[i]);
+			document.write("\n");
+		}
+
+		/***********   Math Objects  *************/
+		document.write("\n",Math.PI);
+		var number=Math.sqrt(9);
+		document.write("\n",number);
+
+		/********   Date and Time Objects   ***********/
+		/*function myAlert(){
+			document.write("\n","HTML","JS");
+		}
+		setInterval(myAlert, 2000);
+		clearInterval(myAlert,10000);*/
+		var d=new Date();
+		var hours=d.getHours();
+		
+		document.write("\n", hours);
+		/**********************************************************
+						D O M
+			*****************************************************/
+		var elem=document.getElenentById("asdf");
+		elem.innerHTML="sachin";
+
+
+	</script>
+</body>
+</html>

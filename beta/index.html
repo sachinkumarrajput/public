@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Explorer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="nav.css">
+
+	<meta name="theme-color" content="#408FFF">
+
+	<link rel="icon" sizes="192x192" href="logo.png">
+	<link rel="apple-touch-icon" href="ios-icon.png">
+	<meta name="msapplication-square310x310logo" content="icon_largetile.png">
+
+	<style type="text/css"></style>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103640258-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-103640258-1');
+</script>
+
+</head>
+<body>
+	<header>
+		<h1>
+			<div id="myNav" class="overlay">
+				<i class="closebtn material-icons" onclick="closeNav()" style="cursor: pointer;">clear</i>
+				<div style="display: inline-block;width: 100%;">
+					<a href="#" style="border-bottom: none;">
+						<i class="material-icons" style="margin-left: 45%;">explore</i>
+					</a>
+				</div>
+				<div class="overlay-content">
+					<a href="devices/devices.html">Devices</a>
+					<a href="automobiles/automobiles.html">Automobiles</a>
+					<a href="webtech/webtech.html">Webtech</a>
+					<a href="blog/blog.html">Blog</a>
+					<a href="sbs/sbs.html">S.T.S</a>
+					<a href="softwares/softwares.html">Softwares</a>
+					<a href="hardware/hardware.html">Hardware</a>
+					<a href="college/college.html">College web</a>
+				</div>
+			</div>
+			<i class="material-icons" style="cursor: pointer;position: absolute;" onclick="openNav()">drag_handle</i>
+			<div style="display: inline-block;width: 100%;">
+				<a href="#"><i class="material-icons" style="margin-left: 45%;">explore</i></a>
+			</div>
+		</h1>
+	</header>
+
+	<div class="space"> </div>
+	<div class="navigation">
+		<ul style="list-style-type: none;">
+			<li>home</li>
+		</ul>
+	</div>
+
+	<article>
+		<section>
+			<a href="automobiles/automobiles.html">
+				<h2><i class="material-icons">motorcycle</i>Automobiles</h2>
+				<div class="detail">
+					<p>Expolre the detail about the modern automobiles like : Cars, Racing cars, Bikes, ...</p>
+				</div>
+			</a>
+		</section>
+		<section>
+			<a href="blog/blog.html">
+				<h2><i class="material-icons">description</i>Bolg</h2>
+				<div class="detail">
+					<p>Explore the update about new in technological word like upde about software companies like :Google, Microsoft, Apple, Amazon, ...</p>
+				</div>
+			</a>
+		</section>
+		<section>
+			<a href="college/college.html">
+				<h2><i class="material-icons">account_balance</i>College Website</h2>
+				<div class="detail">
+					<p>PT college website ...</p>
+				</div>
+			</a>
+		</section>
+		<section>
+			<a href="devices/devices.html">
+				<h2><i class="material-icons">devices_other</i>Devices</h2>
+				<div class="detail">
+					<p>Explore the detail about he device like : Mobiles, Labtops, P.C., Tablets, ...</p>
+				</div>
+			</a>
+		</section>
+		<section>
+			<a href="hardware/hardware.html">
+				<h2><i class="material-icons">memory</i>Hardwares</h2>
+				<div class="detail">
+					<p>Explore the detail about computer microprocessors.</p>
+				</div>
+			</a>
+		</section>
+		<section>
+			<a href="sbs/sbs.html">
+				<h2><i class="material-icons">toc</i>S.B.S.</h2>
+				<div class="detail">
+					<p>Explore the step by step guide to common problems.</p>
+				</div>
+			</a>
+		</section>
+		<section>
+			<a href="softwares/softwares.html">
+				<h2><i class="material-icons">android</i>Softwares</h2>
+				<div class="detail">
+					<p>Explore the details about software like : android, visual studio, Xcode, ...</p>
+				</div>
+			</a>
+		</section>
+		<section>
+			<a href="webtech/webtech.html">
+				<h2><i class="material-icons">code</i>Webtech</h2>
+				<div class="detail">
+					<p>Explore the introduction to web technologies HTML, CSS, JS, ...</p>
+				</div>
+			</a>
+		</section>
+	</article>
+
+	<footer>
+		<div>
+			<p><i class="material-icons" style="font-size: 14px;">copyright</i>copyright 2017 webstart</p>
+		</div>
+	</footer>
+
+	<script>
+   		function openNav() {
+        	document.getElementById("myNav").style.height = "100%";
+    	}
+
+    	function closeNav() {
+        	document.getElementById("myNav").style.height = "0%";
+    	}
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #41cee2;
+    opacity: 1;
+    overflow-y: hidden;
+    transition: .7s;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    padding: 2em;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #0083e4;
+    display: block;
+    border-bottom: 1px solid white;
+    transition: .3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #FFFFFF;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Posiioned Sticky</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box; 
+		}
+		/*body{
+			width: 90%;
+			margin: 0 auto;
+		}*/
+		dl > div {
+			padding: 24px 0 0 0;
+		}
+		dt {
+			background: #FF8893; 
+			border-top: 3px solid red; 
+			color: #FFF; 
+			font: bold 18px/21px Helvetica, Arial, sans-serif;
+			margin: 0; 
+			padding: 4px 0 4px 15px; 
+			position: -webkit-sticky;
+			position: sticky; 
+			top: -1px; 
+		}
+		dd {
+			font: bold 20px/45px Helvetica, Arial, sans-serif;
+			margin: 0; 
+			padding: 0 0 0 12px; 
+			white-space: nowrap; background: #F3DCDC;
+			width: 97%;
+			margin: 0 auto;
+		}
+		dd:hover{
+			background-color: #FF3D3D;
+			color: white;
+			text-shadow: 0px -1px 19px white; 
+			box-shadow: -1px -1px 10px black;
+		}
+		dd + dd {
+			border-top: 1px solid #FF8893; 
+		}
+		dl{
+			width: 90%;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<dl> 
+		<div> 
+			<dt>A</dt> 
+			<dd>Andrew W.K.</dd>
+			<dd>Apparat</dd>
+			<dd>Arcade Fire</dd>
+			<dd>At The Drive-In</dd>
+			<dd>Aziz Ansari</dd>
+		</div>
+		<div>
+			<dt>C</dt>
+			<dd>Chromeo</dd>
+			<dd>Common</dd>
+			<dd>Converge</dd>
+			<dd>Crystal Castles</dd>
+			<dd>Cursive</dd>
+		</div>
+		<div>
+			<dt>E</dt>
+			<dd>Explosions In The Sky</dd>
+		</div>
+		<div>
+			<dt>T</dt>
+			<dd>Ted Leo &amp; The Pharmacists</dd>
+			<dd>T-Pain</dd>
+			<dd>Thrice</dd>
+			<dd>TV On The Radio</dd>
+			<dd>Two Gallants</dd>
+		</div>
+	</dl>
+</body>
+</html>

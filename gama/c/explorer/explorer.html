@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Explorer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body{
+			margin: 0px;
+			background-color: #ECECEC;
+		}
+		header{
+			width: 100%;
+			position: fixed;
+			padding: 5px 5px 1px 5px;
+			background-color: #B4FDB6;
+			font-size: 1em;
+			top: 0;
+			box-shadow: 0px 0px 8px black;
+		}
+		h1{
+			font-size: 1em;
+			margin: 8px 0 0 0;
+			font-family: sans-serif;
+			font-weight: normal;
+		}
+		h2{
+			font-size: 1em;
+			margin: .5em 0;
+			font-weight: normal;
+		}
+		.flex_container{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 90%;
+			margin: auto;
+			background-color: #A6FFFD;
+			font-family: sans-serif;
+		}
+		.flex_item{
+			background-color: white;
+			border: 4px solid #FFA88C;
+			border-radius: 3px;
+			margin: 3%;
+			flex: 200px;
+		}
+		.content{
+			background-color: #F5B4FF;
+			padding: 3px;
+			border: .5px dashed #FF00FC;
+		}
+		.content:hover{
+			background-color: #5BAEFF;
+			color: white;
+		}
+		ul{
+			background-color: white;
+			margin: 1em 0;
+			font-size: .8em;
+		}
+		li{
+			margin: 2px 0;
+		}
+		img{
+			width: 2em;
+			float: left;
+			margin-top: 3px;
+			margin-left: 5px;
+			margin-right: 3px;
+		}
+		a{
+			text-decoration: none;
+			color: blue;
+		}
+		p{
+			font-size: .9em;
+			font-family: monospace;
+			color: #484C47;
+			padding: 1em;
+			margin: 0px;
+		}
+		hr{
+			width: 90%;
+		}
+		section ul li{
+			display: inline;
+			padding: 3px;
+			color: #9B9B9B;
+			font-family: cursive;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="../logo.svg" alt="Logo">
+		<h1>Ws <span style="font-size: .8em;">Explorer</span></h1>
+	</header>
+	<div style="padding: 1.5em;"> </div>
+	<section>
+		<ul style="list-style-type: none;">
+			<li><a href="../index.html">webstart</a></li>
+			<li>/</li>
+			<li>explore</li>
+		</ul>
+	</section>
+	<div class="flex_container">
+		<div class="flex_item">
+			<a href="webtechnology/webtechnology.html">
+				<div class="content">
+					<img src="../logo.svg" alt="Logo">
+					<h2>Web Technology</h2>
+				</div>
+			</a>
+			<div class="detail">
+				<p>Explore the introduction of technologies used to develop webpages</p><hr>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JS</li>
+					<li>XML</li>
+					<li>J Query</li>
+				</ul>
+			</div>
+		</div>
+		<div class="flex_item">
+			<a href="mathematics/mathematics.html">
+				<div class="content">
+					<img src="../logo.svg" alt="Logo">
+					<h2>Mathematics</h2>
+				</div>
+			</a>
+			<div class="detail">
+				<p>Explore the introduction to Applied Mthematics</p><hr>
+				<ul>
+					<li>Matrics</li>
+					<li>Differential Calculus</li>
+					<li>Differential Equation</li>
+					<li>Integral Calculus</li>
+				</ul>
+			</div>
+		</div>
+		<div class="flex_item">
+			<a href="datastructure/datastructure.html">
+				<div class="content">
+					<img src="../logo.svg" alt="Logo">
+					<h2>Data Structure</h2>
+				</div>
+			</a>
+			<div class="detail">
+				<p>Explore the introduction of data structure using c language</p><hr>
+				<ul>
+					<li>Array</li>
+					<li>Stack</li>
+					<li>Queue</li>
+					<li>Lists</li>
+					<li>Trees</li>
+					<li>Graphs</li>
+				</ul>
+			</div>
+		</div>
+		<div class="flex_item">
+			<a href="officeautomation/officeautomation.html">
+				<div class="content">
+					<img src="../logo.svg" alt="Logo">
+					<h2>Office Automation</h2>
+				</div>
+			</a>
+			<div class="detail">
+				<p>Explore the introduction of technoliges used in offices</p><hr>
+				<ul>
+					<li>Email</li>
+					<li>Word Processing</li>
+					<li>Spreedsheets</li>
+					<li>Presentation</li>
+				</ul>
+			</div>
+		</div>
+		<div class="flex_item">
+			<a href="microprocessors/microprocessors.html">
+				<div class="content">
+					<img src="../logo.svg" alt="Logo">
+					<h2>Microprocessors</h2>
+				</div>
+			</a>
+			<div class="detail">
+				<p>Explore the introduction of microprocessors and their applications</p><hr>
+				<ul>
+					<li>Introduction</li>
+					<li>8085 Microprocessor</li>
+					<li>8086 Microprocessor</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer style="height: 2em;text-align: center;padding-top: .5em;background-color: #B4FDB6;margin-top: 1em;">
+		<div>
+			<p style="font-family: monospace;display: inline;">copyright 2017 webstart</p>
+		</div>
+	</footer>
+</body>
+</html>

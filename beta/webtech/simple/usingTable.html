@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		h3{
+			font-size: 85%;
+			margin: 2px;
+			padding: .8em;
+		}
+		.myImage{
+			overflow: auto;
+			display: inline-block;
+			margin: 4%;
+			max-width: 90%;
+			border-left: 4px solid #009688;
+			width: 95%;
+		}
+		img{
+			width: inherit;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: sans-serif;
+			width: 90%;
+			margin: 0 auto;
+		}
+		h1{
+			font-size: 120%;
+		}
+		h2{
+			font-size: 100%;
+			font-weight: normal;
+		}
+		section{
+			width: 90%;
+			margin: auto;
+			border: 2px dotted #00C0FF;
+			margin: 2%;
+			padding: 2%;
+		}
+		header{
+				margin-top: 2em;
+				text-align: center;
+		}
+			.back{
+				border-radius: 50%;
+				border: none;
+				position: fixed;
+				background-color: #00C0FF;
+				color: white;
+				opacity: .9;
+				top: 5px;
+				left: 5px;
+				cursor: pointer;
+			}
+			.upward{
+				border-radius: 50%;
+				border: none;
+				position: fixed;
+				background-color: #00C0FF;
+				color: white;
+				opacity: .8;
+				bottom: 15px;
+				right: 5px;
+				cursor: pointer;
+			}
+	</style>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+
+		<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103640258-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments)};
+		gtag('js', new Date());
+
+  		gtag('config', 'UA-103640258-1');
+	</script>
+</head>
+<body>
+	<header>
+		<a href="../html.html">
+			<button class="back"><i class="material-icons">arrow_back</i></button>
+		</a>
+		<a href="#">
+			<button class="upward"><i class="material-icons">arrow_upward</i></button>
+		</a>
+		<h1>Element Category</h1>
+	</header>
+	<article>
+		<section>
+			<a>
+				<h2>Using Table</h2>
+				<div class="detail">
+				</div>
+			</a>
+			<a>
+			<h3>Used elements:</h3>
+				<div class="detail">
+					<p>table, thead, tbody, tfoot, tr, td, th, caption, colgroup, col</p>
+				</div>
+			</a>
+			<a>
+				<h3>Code:</h3>
+				<div class="myImage">
+					<img src="images/usingTableCode.png" alt="usingTableCode">
+				</div>
+				<h3>Output:</h3>
+				<div class="myImage" style="height: inherit;">
+					<img src="images/usingTableOutput.png" alt="usingTableOutput">
+				</div>
+			</a>
+		</section>
+	</article>
+</body>
+</html>

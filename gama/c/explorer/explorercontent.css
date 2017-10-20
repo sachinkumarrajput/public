@@ -1,0 +1,86 @@
+	*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0px;
+			background-color: #ECECEC;
+			font-family: sans-serif;
+		}
+		header{
+			width: 100%;
+			position: fixed;
+			padding: 5px 5px 1px 5px;
+			background-color: #F5B4FF;
+			font-size: 1em;
+			top: 0;
+			box-shadow: 0px 0px 8px black;
+		}
+		h1{
+			font-size: 1em;
+			margin: 8px 0 0 0;
+			font-weight: normal;
+		}
+		img{
+			width: 2em;
+			float: left;
+			margin-top: 3px;
+			margin-left: 5px;
+			margin-right: 3px;
+		}
+		.container{
+			width: 90%;
+			margin: auto;
+		}
+		.section{
+			background-color: #B0C3FF;
+			padding: 1em;
+			margin-bottom: 1em;
+			border-radius: 3px;
+		}
+		h2{
+			text-align: center;
+			font-weight: normal;
+			margin-top: 0;
+		}
+		.section ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			text-align: center;
+			font-size: 90%;
+			border: 1px solid black;
+		}
+		.section ul li:nth-of-type(3):hover{
+			background-color: #477EFF;
+		}
+		.section ul li:nth-of-type(1){
+			flex: .5;
+		}
+		.section ul li:nth-of-type(3){
+			flex: 1.5;
+		}
+		.section ul li:nth-of-type(2){
+			flex: 3 120px;
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+		}
+		.section ul li{
+			display: inline;
+			padding: .6em .8em;
+			align-self: center;
+		}
+		.section ul li a{
+			text-decoration: none;
+			color: blue;
+		}
+		.section ul li a:hover{
+			color: white;
+		}
+		section ul li{
+			display: inline;
+			padding: 3px;
+			font-family: cursive;
+			font-size: .8em;
+			color: #9B9B9B;
+		}

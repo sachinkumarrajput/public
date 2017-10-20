@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Style and Semantics Element</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0px;
+			background-color: #ECECEC;
+			font-family: sans-serif;
+		}
+		header{
+			width: 100%;
+			position: fixed;
+			padding: 5px 5px 1px 5px;
+			background-color: #F5B4FF;
+			font-size: 1em;
+			top: 0;
+			box-shadow: 0px 0px 8px black;
+		}
+		h1{
+			font-size: 1em;
+			margin: 8px 0 0 0;
+			font-weight: normal;
+		}
+		img{
+			width: 2em;
+			float: left;
+			margin-top: 3px;
+			margin-left: 5px;
+			margin-right: 3px;
+		}
+		.container{
+			width: 90%;
+			margin: 3.5em auto 0 auto;
+		}
+		section{
+			border: 2.5px dashed lightgreen;
+		}
+		p{
+			margin-left: 1em;
+			margin-right: 1em;
+			font-size: 90%;
+		}
+	</style>
+</head>
+<body>
+	<header style="background-color: #b0c3ff">
+		<img src="../../logo.svg" alt="Logo">
+		<h1>Ws <span style="font-size: .85em;">Style &amp; Semantics Element</span></h1>
+	</header>
+	<section class="container">
+		<h2 style="background-color: #77FF79;display: inline;font-family: monospace;">&lt;section&gt; Element </h2>
+		<p>The Section Elemnt represents a generic section of a document. The theme of each section should be identical, typically by including a heading (h1-h6 element) as a child of the section element.</p>
+		<p>A general rule is that the section element is a appropriate only if the element's content would be listed explicity in the document's outline</p>
+	</section>
+	<section class="container">
+		<h2 style="background-color: #77FF79;display: inline;font-family: monospace;">&lt;article&gt; Element </h2>
+		<p>The article element represents a complete, or self contained, composition in a document, page, application, indepently distributable or reusuable.</p>
+		<p>This could be a forum post, a magazine or newspaper article, a blog entry a user subbmitted comment or any independent item of content.</p>
+		<p>When an article elements are nested, the inner article elements represents articles that are principle related to the contents of the outer article.</p>
+	</section>
+</body>
+</html>

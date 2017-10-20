@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A,V,F Demo</title>
+	<style type="text/css">
+		body{
+			font-family: monospace;
+			background-color: rgb(177, 86, 255);
+		}
+		h1{
+			text-align: center;
+			padding-top: 5px;
+		}
+		h3{
+			padding-top: 5px;
+		}
+		div{
+			padding-left: 1em;
+			padding-right: 1em;
+			padding-bottom: 1em;
+			border-radius: 4px;
+		}
+		/*Audio Style*/
+		.audiodemo{
+			background-color: #4A57FE;
+		}
+		audio{
+			width: 100%;
+		}
+		/*Video Style*/
+		.videodemo{
+			background-color: #35DEF8;
+		}
+		video{
+			width: 100%;
+		}
+		/*Frame Demo*/
+		.framedemo{
+			background-color: #0FA0D4;
+		}
+		iframe{
+			width: 95%;
+			height: 350px;
+		}
+	</style>
+</head>
+<body>
+
+	<!--Audio Demo-->
+	<div class="audiodemo">
+		<h1>Audio Demo</h1>
+		<div style="background-color: #10AB1E;">
+			<h3>Audio Without Source tag</h3>
+			<audio src="apple.mp3" controls="" loop="">Unsupported</audio>
+		</div>
+		<div style="background-color: #C72BC2;">
+			<h3>Audio With Source tag</h3>
+			<audio controls="" loop="">
+				<source src="iphone5.mp3" type="">
+				<source src="iphonex.ogg" type="">
+				Unsupported
+			</audio>
+		</div>
+	</div>
+
+	<!--Video Demo-->
+	<div class="videodemo">
+		<h1>Video Demo</h1>
+		<div style="background-color: #EB2C2C;">
+			<h3>Video Without Source Tag</h3>
+			<video src="video1.mp4" controls loop>Unsupported</video>
+		</div>
+		<div style="background-color: #DEDF11;">
+			<h3>Video With Source Tag</h3>
+			<video controls loop>
+				<source src="video2.mp4" type="">
+				<source src="video3.ogg" type="">
+				Unsupported
+			</video>
+		</div>
+	</div>
+
+	<!-- Frame Demo-->
+	<div class="framedemo">
+		<h1>Frame Demo</h1>
+		<center>
+			<iframe src="https://webstart-39d09.firebaseapp.com/">UnSupported</iframe>
+		</center>
+	</div>
+</body>
+</html>

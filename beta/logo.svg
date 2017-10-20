@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80">
+	
+	<polygon points="5,5,55,5,50,55,30,60,10,55" style="fill: white;stroke: #0073FF;stroke-width: 2.5;" />
+			<text x="13" y="20" style="fill: #83CEF9;font-size: 13;font-family: verdana;">
+			HTML</text>
+			<text x="17" y="35" style="fill: #83CEF9;font-size: 13;font-family: verdana;">
+			CSS</text>
+			<text x="22" y="50" style="fill: #83CEF9;font-size: 13;font-family: verdana;">
+			JS</text>
+</svg>

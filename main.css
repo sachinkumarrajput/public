@@ -1,0 +1,29 @@
+body{
+	font-family: sans-serif;
+	margin: 0;
+}
+header{
+	background-color: lightgreen;
+	padding: .5em;
+}
+header h1{
+	font-size: 1.4em;
+	margin: 0;
+	color: blue;
+}
+article{
+	width: 90%;
+	margin: auto;
+}
+article h2{
+	font-size: 1.1em;
+}
+article{
+	padding: 1em;
+}
+article a{
+	display: block;
+	margin-bottom: 1em;
+	font-weight: bold;
+	font-size: 1.2em;
+}

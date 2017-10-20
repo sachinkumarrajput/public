@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I,L,T Demo</title>
+	<style type="text/css">
+		body{
+			font-family: monospace;
+			background-color: lightgreen;
+		}
+		div{
+			margin-top: 1em;
+			border-radius: 4px;
+		}
+		h1{
+			text-align: center;
+		}
+
+		/*Image Style*/
+		figure{
+			border: 2px solid lightgreen;
+		}
+		figcaption{
+			border: 2px dashed skyblue;
+		}
+		img{
+			border: 2px dashed red;
+		}
+		.imagedemo{
+			background-color: green;
+			text-align: center;
+		}
+
+		/*Table Style*/
+		table,tr,th,td{
+			border: 2px solid black;
+			border-collapse: collapse;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			text-align: center;
+		}
+		table{
+			width: 95%;
+		}
+		.tabledemo{
+			background-color: red;
+		}
+
+		/*List Style*/
+		.listdemo{
+			background-color: #F7EB05;
+			padding-bottom: 1em;
+		}
+		ol,ul,dl{
+			margin: 1em;
+		}
+		ol{
+			background-color: #7093ED;
+		}
+		ul{
+			background-color: #C800FF;
+		}
+		dl{
+			background-color: #E1591E;
+			margin-bottom: 1em;
+		}
+
+	</style>
+</head>
+<body>
+	<!--Image Demo-->
+	<div class="imagedemo">
+		<h1>Image Demo</h1>
+		<figure>
+			<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+			<figcaption>Click(Sun,Mercury,Venus)</figcaption>
+		</figure>
+		<map name="planetmap">
+			<area shape="rect" coords="0,0,82,126" href="sun.gif" alt="Sun">
+			<area shape="circle" coords="90,58,3" href="merglobe.gif" alt="Mercury">
+			<area shape="circle" coords="124,58,8" href="venglobe.gif" alt="Venus">
+		</map>
+		<picture>
+			<source src="" type="" srcset="lenovo.png" media="(min-width: 650px)">
+			<source src="" type="" srcset="samsung.jpg" media="(min-width:450px)">
+				<img src="apple.jpg" alt="Apple" width="250" height="250">
+				<figcaption>Resize Browser to Change Image</figcaption>
+
+		</picture>
+	</div>
+	<!-- Table Demo-->
+	<div class="tabledemo">
+		<center>
+			<h1>Table Demo</h1>			
+			<table>
+				<colgroup>
+					<col span="1" style="background-color: lightgreen;">
+					<col span="3" style="background-color: lightblue;">
+				</colgroup>
+				<caption>IT Products</caption>
+				<tfoot>
+					<tr>
+						<td>++++</td>
+						<td colspan="3">++++</td>
+					</tr>
+				</tfoot>
+				<thead>
+					<tr>
+						<th>Brand</th>
+						<th>Mobile Series</th>
+						<th>Labtop Series</th>
+						<th>Tablet Series</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Apple</td>
+						<td>Iphone</td>
+						<td>Imac</td>
+						<td>Ipad</td>
+					</tr>
+					<tr>
+						<td>Samsung</td>
+						<td>Galaxy</td>
+						<td>Notebook</td>
+						<td>Galaxy Tab</td>
+					</tr>
+				</tbody>
+			</table>
+		</center>
+	</div>
+	<!-- List Demo-->
+	<div class="listdemo">
+		<h1>List Demo</h1>
+		<ol>
+			<li>Appied Mathematics II</li>
+			<li>Data Structure Using C</li>
+			<li>Web Technology I</li>
+			<li>Micreprocessors And Applications</li>
+			<li>Ofice Automation Tools</li>
+		</ol>
+		<ul>
+			<li>Image Demo</li>
+			<li>Table Demo</li>
+			<li>List Demo</li>
+		</ul>
+		<dl>
+			<dt>HTML</dt>
+			<dd>Hyper text Markup Language</dd>
+			<dt>CSS</dt>
+			<dd>Cascading Style Sheet</dd>
+			<dt>JS</dt>
+			<dd>Java Script</dd>
+		</dl>
+	</div>
+</body>
+</html>

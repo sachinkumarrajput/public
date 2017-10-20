@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS I</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body{
+			width: 95%;
+			margin: auto;
+		}
+		header{
+			width: 90%;
+			margin: 1em auto;
+		}
+		article{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 90%;
+			margin: auto;
+			font-family: sans-serif;
+		}
+		article section{
+			flex: 250px;
+			background-color: #A580FF;
+			border-radius: 4px;
+			margin-bottom: 1em;
+			padding: 1em;
+			margin: 1em;
+		}
+		img{
+			width: 200px;
+		}
+	</style>
+		<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103640258-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments)};
+		gtag('js', new Date());
+
+  		gtag('config', 'UA-103640258-1');
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Java Script I</h1>
+		<h2>What can java script do?</h2>
+	</header>
+	<div style="margin-top: 2em;"> </div>
+
+	<article>
+		<section>
+			<h2>1. Java script can change html content</h2>
+			<p id="demo">Here, we would change the content of this paragraph using java script by using button as trigger to change the content.</p>
+			<button type="button" onclick="change()">Click To Change</button>
+			<button type="button" onclick="back()">Click To Back</button>
+		</section>
+		<section>
+			<h2>2. Java Script can Change html styles</h2>
+			<p id="item">Here, we would change the background color of this paragraph by using java script by button as triggger.</p>
+			<button type="button" onclick="red()">Click To Change Bg color</button>
+			<button type="button" onclick="initial()">Click to return initial</button>
+		</section>
+		<section>
+			<h2>3. Java Script can change html attributes</h2>
+			<p>Here, we would change the image by changing image source using java script by button as trigger</p>
+			<img id="image" src="../../../devices/mobiles/apple/iphone8p.jpg" alt="first image">
+			<button type="button" onclick="secondsrc()">Click to change image</button>
+			<button type="button" onclick="firstsrc()">Click to back image</button>
+		</section>
+	</article>
+
+	<script type="text/javascript">
+		// for first example 
+		function change() {
+			document.getElementById('demo').innerHTML="hello World";
+		}
+		function back() {
+			document.getElementById('demo').innerHTML="Here, we would change the content of this paragraph using java script by using button as trigger to change the content."
+		}
+
+		//for second example
+		function red() {
+			document.getElementById('item').style="background-color: red;";
+		}
+		function initial() {
+			document.getElementById('item').style="background-color: initial;";
+		}
+
+		// for third example
+		function secondsrc() {
+			document.getElementById('image').src="../../../devices/mobiles/apple/iphonex.jpg";
+		}
+		function firstsrc() {
+			document.getElementById('image').src="../../../devices/mobiles/apple/iphone8p.jpg";
+		}
+	</script>
+
+</body>
+</html>

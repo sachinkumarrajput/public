@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Embedded JS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+			*{
+				box-sizing: border-box;
+			}
+			body{
+				font-family: sans-serif;
+				width: 90%;
+				margin: auto;
+			}
+			h1{
+				font-size: 1.2em;
+			}
+			h2{
+				font-size: 1em;
+				font-weight: normal;
+			}
+			div{
+				overflow-x: auto;
+				border-left: 4px solid #00C0FF;
+			}
+			img{
+				width: 20em;
+			}
+			p{
+				font-size: .8em;
+			}
+			section{
+				width: 90%;
+				margin: auto;
+				border: 2px dotted #00C0FF;
+				margin: 5%;
+				padding: 5%;
+			}
+			header{
+				margin-top: 2em;
+				text-align: center;
+			}
+			.back{
+				border-radius: 50%;
+				border: none;
+				position: fixed;
+				background-color: #00C0FF;
+				color: white;
+				opacity: .9;
+				top: 5px;
+				left: 5px;
+				cursor: pointer;
+			}
+			.upward{
+				border-radius: 50%;
+				border: none;
+				position: fixed;
+				background-color: #00C0FF;
+				color: white;
+				opacity: .8;
+				bottom: 15px;
+				right: 5px;
+				cursor: pointer;
+			}
+		</style>
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	      rel="stylesheet">
+
+
+		<!--Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103640258-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments)};
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-103640258-1');
+		</script>
+	</head>
+	<body>
+		<header>
+			<a href="../html.html">
+				<button class="back"><i class="material-icons">arrow_back</i></button>
+			</a>
+			<a href="#">
+				<button class="upward"><i class="material-icons">arrow_upward</i></button>
+			</a>
+			<h1>Embedded JS in HTML page</h1>
+		</header>
+
+		<article>
+			<section>
+				<h2>Displaing Alert Dialog Box</h2>
+				<p>An Alert Dialog box is simply use for displaying an error or message about the user activity that get actived by user.</p>
+				<button type="button" onclick="myAlert()">Click to display alert</button>
+			</section>
+			<section>
+				<h2>Displaying Prompt Dialog Box</h2>
+				<p>A prompt dialog box is used when we want the the user to give some input value before enter ing to the page.</p>
+				<button type="button" onclick="myPrompt()">Click to display prompt</button>
+			</section>
+			<section>
+				<h2>Displaying Confirm Dialog Box</h2>
+				<p>A confirm box is used if we want the user to accept something.</p>
+				<button type="button" onclick="myConfirm()">Click To Display Confirm</button>
+			</section>
+			<section>
+				<h2>Code</h2>
+				<div>
+					<img src="images/myDialogbox.png" alt="myDialogbox">
+				</div>
+			</section>
+		</article>
+
+		<script type="text/javascript">
+			function myAlert() {
+				alert("Hello World");
+			}
+			function myPrompt() {
+				var a=prompt("enter your name to display");
+				alert(a);
+			}
+			function myConfirm() {
+				var a=confirm("Do you like Apple");
+				if(a==true)
+					alert("Me too");
+				else
+					alert("But I");
+			}
+		</script>
+	</body>
+</html>

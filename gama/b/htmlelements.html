@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Html5 Elements</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<style type="text/css">
+		body{			
+			font-family: monospace;
+			margin: 0px;
+		}
+		h1{
+			font-size: 1.5em;
+			position: fixed;
+			background-color: white;
+			padding: 10px;
+			font-weight: normal;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			width: 100%;
+			text-shadow: 0px 0px 3px #585555;
+			box-shadow: 0px 0px 6px black;
+		}
+		ol{
+			margin: 0px;
+			padding: 0px;
+		}
+		li{
+			margin: 1em 0px 5px 0px;
+		}
+		.main{
+			display: inline-block;
+			margin: 5em 1em 1em 1em;
+		}
+		.content{
+			padding: 0px 0em 0px 3em;
+			box-shadow: 0px 0px 1px black;
+			margin: 0px 0px 1em 0px;
+			display: inline-block;
+			width: 10em;
+			font-size: 1.3em;
+		}
+		.content:hover{
+			background-color: #6093ff;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>HTML5 ELEMENTS</h1>
+		<div class="main" id="Demo">
+			<ol>
+				<a href="#comment">
+					<div class="content">
+						<li>&lt;!--....--&gt;</li>
+					</div>
+				</a>
+				<a href="#">
+					<div class="content">
+						<li>&lt;!DOCTYPE&gt;</li>
+					</div>
+				</a>
+				<a href="#">
+					<div class="content">
+						<li>&lt;a&gt;</li>
+					</div>
+				</a>
+				<div class="content">
+					<a><li>&lt;abbr&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;address&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;area&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;h1&gt;to&lt;h6&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;article&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;aside&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;audio&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;b&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;base&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;bdi&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;bdo&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;blockquote&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;body&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;br&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;button&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;canvas&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;caption&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;cite&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;code&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;col&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;colgroup&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;datalist&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;dd&gt;</li></a>
+				</div>
+				<div class="content">
+					<a><li>&lt;meter&gt;</li></a>
+				</div>
+			</ol>
+		</div>
+		<div class="detail">
+			<div id="Show" style="display: none;">
+				How to write a comment.
+			</div>
+		</div>
+		<button onclick="document.getElementById('Demo').style.display='none'">Hide element</button>
+		<button onclick="document.getElementById('Show').style.display='block'" >show element</button>
+	</body>
+</html>

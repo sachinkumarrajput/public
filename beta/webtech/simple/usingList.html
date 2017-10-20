@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>List Demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+			*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: sans-serif;
+			width: 90%;
+			margin: 0 auto;
+		}
+		h1{
+			font-size: 120%;
+		}
+		h2{
+			font-size: 100%;
+			font-weight: normal;
+		}
+		header{
+				margin-top: 2em;
+				text-align: center;
+		}
+		.back{
+				border-radius: 50%;
+				border: none;
+				position: fixed;
+				background-color: #00C0FF;
+				color: white;
+				opacity: .9;
+				top: 5px;
+				left: 5px;
+				cursor: pointer;
+			}
+			.upward{
+				border-radius: 50%;
+				border: none;
+				position: fixed;
+				background-color: #00C0FF;
+				color: white;
+				opacity: .8;
+				bottom: 15px;
+				right: 5px;
+				cursor: pointer;
+			}
+		section{
+			width: 90%;
+			margin: auto;
+			border: 2px dotted #00C0FF;
+			margin: 2%;
+			padding: 2%;
+		}
+			h3{
+				font-size: 85%;
+				margin: 2px;
+				padding: .8em;
+			}
+			.myImage{
+				overflow-x: auto;
+				display: inline-block;
+				margin: 4%;
+				max-width: 90%;
+				border-left: 4px solid #009688;
+			}
+			img{
+				width: 15em;
+			}
+		</style>
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	      rel="stylesheet">
+
+
+	      
+			<!-- Global Site Tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103640258-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments)};
+			gtag('js', new Date());
+
+	  		gtag('config', 'UA-103640258-1');
+		</script>
+	</head>
+	<body>
+		<header>
+			<a href="../html.html">
+				<button class="back"><i class="material-icons">arrow_back</i></button>
+			</a>
+			<a href="#">
+				<button class="upward"><i class="material-icons">arrow_upward</i></button>
+			</a>
+			<h1>List Demo</h1>
+		</header>
+
+		<article>
+			<section>
+					<h2>Ordered List</h2>
+					<div class="detail">
+						<p>An ordered list is used when we want the items to be listed in a sequence according to an order so it is called an ordered list.</p>
+						<p>Example of an ordered list, the list of IT companies</p>
+					</div>
+					<h3>Code:</h3>
+					<div class="myImage">
+						<img src="images/usingOrderedListCode.png" alt="usingOrderedListCode">
+					</div>
+					<h3>Output:</h3>
+					<div class="myImage">
+						<img src="images/usingOrderedListOutput.png" alt="usingOrderedListOutput">
+					</div>
+			</section>
+			<section>
+					<h2>Unordered List</h2>
+					<div class="detail">
+						<p>An Unordered list is used we want to list items simply which are not having any sequence i.e not any ordered number before them the are initialised by using symols.</p>
+						<p>Example of Unordered list, the list of IT companies</p>
+					</div>
+					<h3>Code:</h3>
+					<div class="myImage">
+						<img src="images/usingUnorderedListCode.png" alt="usingUnorderedListCode">
+					</div>
+					<h3>Output:</h3>
+					<div class="myImage">
+						<img src="images/usingUnorderedListOutput.png" alt="usingUnorderedListOutput">
+					</div>
+				</a>
+			</section>
+			<section>
+				<a>
+					<h2>Description List</h2>
+					<div class="detail">
+						<p>A description list is a list of items, with description of each item. In descrption list we write description about a title which lie above the description of the item (title)</p>
+						<p>Example of a Description list, Fullform of basic web language</p>
+					</div>
+				</a>
+				<a>
+					<h3>Code:</h3>
+					<div class="myImage">
+						<img src="images/usingDescriptionListCode.png" alt="usingDescriptionListCode">
+					</div>
+					<h3>Output:</h3>
+					<div class="myImage">
+						<img src="images/usingDescriptionListOutput.png" alt="usingDescriptionListOutput">
+					</div>
+				</a>
+			</section>
+		</article>
+	</body>
+</html>
