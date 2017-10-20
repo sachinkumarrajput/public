@@ -26,4 +26,12 @@ article a{
 	margin-bottom: 1em;
 	font-weight: bold;
 	font-size: 1.2em;
+	background-color: red;
+	padding: .5em;
+	border: 1px dotted blue;
+	
+}
+article a:hover{
+	color: white;
+	background-color: #ffaeae;
 }
