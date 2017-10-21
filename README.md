@@ -1,2 +1,2 @@
-These are the demo file from me. I am Working on them. Anyone can suggest any change to be produced in the file for there better development.
+These are the demo projects from me. I am working on them. Anyone can suggest any change to be produced in the projects for there better development.
 Thanks
